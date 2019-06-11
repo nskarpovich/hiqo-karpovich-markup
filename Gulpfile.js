@@ -4,7 +4,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var change = require('gulp-change');
 var browserSync = require('browser-sync').create();
 
-var allStyles = './scss/*.scss';
+var allStyles = './scss/**/*.scss';
 var input = './scss/styles.scss';
 var output = './assets';
 
@@ -24,7 +24,7 @@ gulp.task('serve', ['add css'], function() {
         }
     });
 
-    gulp.watch(allStyles, ['add css']);
+    gulp.watch(allStyles, ['sass', 'add css']);
     gulp.watch('*.html').on('change', browserSync.reload);
 });
 
