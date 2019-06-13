@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  color: #fff;
+  background-color:#3d4148;
+}
+ul {
+  list-style: none; 
+  margin: 0; 
+  padding-left: 0;
+  text-transform: uppercase;
+}
+a {
+  text-decoration: none;
+}
+li {
+  float:left; 
+  margin-right:5px; 
+}
