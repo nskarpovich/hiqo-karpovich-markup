@@ -1,9 +1,14 @@
 @import "vendor/reset";
-
+@import "assets/fonts/fonts.css";
 @import "variables";
 @import "typography";
+@import "mixins/font";
+@import "mixins/pseudo";
+@import "mixins/dam-folder";
+@import "mixins/dam-icons";
+@import "mixins/dam";
 
 // import components here
 @import "components/_container";
-@import "components/_paral";
+@import "components/_title";
 
