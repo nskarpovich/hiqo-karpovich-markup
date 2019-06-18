@@ -277,11 +277,8 @@ body {
   flex: 0 0 auto;
 }
 
-body {
-  position: relative;
-}
-
-.header::before .header::after {
+.header::before,
+.header::after {
   content: "";
   display: block;
   position: absolute;
@@ -294,18 +291,14 @@ body {
   bottom: 0;
 }
 
-.header::before body {
-  background-color: #fafafa;
-}
-
-.header::before .paralax-section {
+.paralax-section {
   padding: 100px 0 185px;
   text-align: center;
   background-color: #d14b3a;
   position: relative;
 }
 
-.header::before .paralax-section::after {
+.paralax-section::after {
   content: "";
   display: block;
   position: absolute;
@@ -316,7 +309,7 @@ body {
   bottom: 0;
 }
 
-.header::before .title {
+.title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -329,7 +322,7 @@ body {
   align-items: center;
 }
 
-.header::before .title .title__heading {
+.title .title__heading {
   text-align: center;
   font-size: 45.3px;
   font-family: "Raleway",sans-serif;
@@ -339,12 +332,12 @@ body {
   color: #fafafa;
 }
 
-.header::before .title .title__line {
+.title .title__line {
   stroke: #fafafa;
   stroke-width: 10;
 }
 
-.header::before .title .title__description {
+.title .title__description {
   color: #fafafa;
   font-size: 18px;
   font-family: "Open Sans";
@@ -352,7 +345,7 @@ body {
   padding: 19px 0;
 }
 
-.header::before .blockquote {
+.blockquote {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -367,7 +360,7 @@ body {
   margin: 0 auto;
 }
 
-.header::before .blockquote__text {
+.blockquote__text {
   color: #fafafa;
   font-size: 30px;
   line-height: 40px;
@@ -378,7 +371,7 @@ body {
   position: relative;
 }
 
-.header::before .blockquote__text::before {
+.blockquote__text::before {
   content: "“";
   font-size: 150px;
   color: #fafafa;
@@ -388,7 +381,7 @@ body {
   height: 65px;
 }
 
-.header::before .blockquote__author {
+.blockquote__author {
   -ms-flex-item-align: start;
   align-self: flex-start;
   color: #fafafa;
@@ -398,7 +391,7 @@ body {
   padding: 0 11px;
 }
 
-.header::before .footer {
+.footer {
   -webkit-box-flex: 0;
   -ms-flexbox: 0 0 auto;
 }
