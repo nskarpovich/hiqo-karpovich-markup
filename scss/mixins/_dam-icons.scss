@@ -1,14 +1,14 @@
-@mixin icons($color) {
+@mixin dam-icons($color) {
 
     &::after {
-    @include nat("", 46%, $height-folder);
+    @include pseudo("", 46%, $height-folder);
     background-color: $color;
     right: 0;
     top: -$height-folder;
     }
     
     &::before {
-    @include nat("", 0, 0);
+    @include pseudo("", 0, 0);
     border: $height-folder/2 solid transparent;
     border-right-color: $color;
     border-bottom-color: $color;

@@ -1,13 +1,13 @@
-@mixin proj($color) {
+@mixin dam($color) {
     &::before {
- @include nat("", 49%, $height-nat);
+ @include pseudo("", 49%, $height-nat);
     background-color: $color;
     left: 0;
     bottom: 0;
     }
     
     &::after {
-    @include nat("", 0, 0);
+    @include pseudo("", 0, 0);
     border: $height-nat/2 solid transparent;
     border-left-color: $color;
     border-bottom-color: $color;

@@ -1,7 +1,7 @@
-@mixin folder($color) {
+@mixin dam-folder($color) {
 
     &::before {
-    @include nat("", 46%, $height-folder);
+    @include pseudo("", 46%, $height-folder);
     background-color: $color;
     left: 1px;
     top: -36px;
@@ -9,7 +9,7 @@
     }
     
     &::after {
-    @include nat("", 0, 0);
+    @include pseudo("", 0, 0);
     border: $height-folder/2 solid transparent;
     border-left-color: $color;
     border-bottom-color: $color;

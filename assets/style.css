@@ -7,10 +7,6 @@ h1 {
   padding: 30px 0 47px;
 }
 
-.stats-section {
-  background-color: red;
-}
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -61,6 +57,11 @@ body {
 }
 
 .header::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 49%;
+  height: 30px;
   background-color: #d14b3a;
   left: 0;
   bottom: 0;
@@ -72,6 +73,7 @@ body {
   position: absolute;
   width: 0;
   height: 0;
+  border: 15px solid transparent;
   border-left-color: #d14b3a;
   border-bottom-color: #d14b3a;
   left: 49%;
@@ -235,6 +237,11 @@ body {
 }
 
 .paralax-section::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 49%;
+  height: 30px;
   background-color: #656d7a;
   left: 0;
   bottom: 0;
@@ -246,6 +253,7 @@ body {
   position: absolute;
   width: 0;
   height: 0;
+  border: 15px solid transparent;
   border-left-color: #656d7a;
   border-bottom-color: #656d7a;
   left: 49%;

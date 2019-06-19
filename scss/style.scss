@@ -3,10 +3,10 @@
 @import "variables";
 @import "typography";
 @import "mixins/font";
-@import "mixins/nat";
-@import "mixins/folder";
-@import "mixins/icons";
-@import "mixins/proj";
+@import "mixins/pseudo";
+@import "mixins/dam-folder";
+@import "mixins/dam-icons";
+@import "mixins/dam";
 
 // import components here
 @import "components/_container";

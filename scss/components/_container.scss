@@ -37,7 +37,7 @@
     }
     
     .header {
-    @include proj($color-accent);
+    @include dam($color-accent);
     background-color: $color-primary;
     position: relative;
     }
@@ -111,7 +111,7 @@
     position: relative;
     
     &::before {
-    @include nat ("", 210px, 10px);
+    @include pseudo ("", 210px, 10px);
     background: url() no-repeat;
     left: 0;
     bottom: 5px;
@@ -166,7 +166,7 @@
     }
     
     .paralax-section {
-    @include proj($color-secondary);
+    @include dam($color-secondary);
     padding: 100px 0 139px;
     text-align: center;
     background-color: $color-accent;
@@ -189,7 +189,7 @@
     position: relative;
     
     &::before {
-    @include nat("", 65px, 65px);
+    @include pseudo("", 65px, 65px);
     background: url() no-repeat;
     top: -18px;
     left: -20px;
@@ -227,7 +227,7 @@
                 position: relative;
                 
                 &::before {
-                    @include nat ("", 45px, 45px);
+                    @include pseudo ("", 45px, 45px);
                 }
             }
             
@@ -295,7 +295,7 @@
     
     &__item {
     @include font($font-primary, normal, 14px);
-    @include folder($color-folder);
+    @include dam-folder($color-folder);
     position: relative;
     padding-top: 219px;
     text-transform: capitalize;
@@ -327,7 +327,7 @@
     }
     
     &::before {
-    @include nat("", 100%, 206px);
+    @include pseudo("", 100%, 206px);
     background-color: $color-folder;
     top: -218px;
     left: 1px;
@@ -349,7 +349,7 @@
     padding: 10px 14px 0 27px;
     
     &::before {
-    @include nat("", 20px, 20px);
+    @include pseudo("", 20px, 20px);
     }
     
     &_author::before {
@@ -442,7 +442,7 @@
     }
     
     .icons {
-    @include icons($color-bg-icons-post);
+    @include dam-icons($color-bg-icons-post);
     position: relative;
     display: flex;
     justify-content: flex-end;
